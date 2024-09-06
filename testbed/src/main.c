@@ -1,6 +1,11 @@
-#include "../../engine/src/test.h"
+#include "../../engine/src/core/logger.h"
 
 int main(void) {
-    print_int(42);
+    KFATEL("Fetal testing %f", 3.31);
+    KERROR("Error testing");
+    KDEBUG("Debug testing");
+    KWARN("WARN testing");
+    KINFO("INFO testing");
+    KTRACE("TRACE testing");
     return 0;
 }
